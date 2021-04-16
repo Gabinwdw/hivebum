@@ -25,8 +25,8 @@ import kotlin.random.Random
 
 class SpotifyModel(private var context: Context) {
 
-    private val clientId = "d87deeacab774531b8d9a138b4e4593e"
-    private val redirectUri = "http://com.example.hivebum/callback"
+    private val clientId = "" // /!\ client id
+    private val redirectUri = "" // /!\ redirecet uri
     private var api : ApiInterfaceSpotify? = ApiClientSpotify.retrofit.create(ApiInterfaceSpotify::class.java)
 
     private lateinit var manager: CardStackLayoutManager
