@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/neumorphism_background">
+    android:background="@color/neumorphism_background"
+    tools:ignore="Overdraw">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/baloo"
-                android:text="what type of music ?"
+                android:text="@string/type_music_text_en"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
@@ -79,7 +80,6 @@
                 android:layout_marginBottom="32dp"
                 android:fontFamily="@font/baloo"
                 android:letterSpacing="0.1"
-                android:text="Genre"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"

@@ -40,13 +40,13 @@ class Image {
 
 class Item {
     @SerializedName("album_type")
-    var album_type: String? = null
+    var albumType: String? = null
     @SerializedName("artists")
     var artists: List<Artist>? = null
     @SerializedName("available_markets")
-    var available_markets: List<String>? = null
+    var availableMarkets: List<String>? = null
     @SerializedName("external_urls")
-    var external_urls: ExternalUrls? = null
+    var externalUrls: ExternalUrls? = null
     @SerializedName("href")
     var href: String? = null
     @SerializedName("id")
@@ -56,11 +56,11 @@ class Item {
     @SerializedName("name")
     var name: String? = null
     @SerializedName("release_date")
-    var release_date: String? = null
+    var releaseDate: String? = null
     @SerializedName("release_date_precision")
-    var release_date_precision: String? = null
+    var releaseDatePrecision: String? = null
     @SerializedName("total_tracks")
-    var total_tracks = 0
+    var totalTracks = 0
     @SerializedName("type")
     var type: String? = null
     @SerializedName("uri")
@@ -69,7 +69,7 @@ class Item {
 
 class Artist {
     @SerializedName("external_urls")
-    var external_urls: ExternalUrls? = null
+    var externalUrls: ExternalUrls? = null
     @SerializedName("href")
     var href: String? = null
     @SerializedName("id")

@@ -4,7 +4,6 @@ import android.animation.Animator
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.ViewAnimationUtils
 import android.widget.TextView
@@ -19,8 +18,8 @@ import com.yuyakaido.android.cardstackview.*
 import soup.neumorphism.NeumorphImageView
 
 class SpotifyView : AppCompatActivity(), CardStackListener {
-    var getAccessToken: Boolean = false
-    lateinit var accessToken: String
+    private var getAccessToken: Boolean = false
+    private lateinit var accessToken: String
     private lateinit var presenter: SpotifyPresenter
 
     private lateinit var yesButton: NeumorphImageView
@@ -43,7 +42,7 @@ class SpotifyView : AppCompatActivity(), CardStackListener {
         initializeCardView()
     }
 
-    fun init() {
+    private fun init() {
         yesButton = this.findViewById(R.id.yes_button)
         noButton = this.findViewById(R.id.no_button)
         nameGenreText = this.findViewById(R.id.genreNameText)
@@ -87,7 +86,7 @@ class SpotifyView : AppCompatActivity(), CardStackListener {
 
     fun getNewAlbum() {
         val charPool: List<Char> = ('a'..'z') + ('A'..'Z')
-        val randomString = ("a").map { _ -> kotlin.random.Random.nextInt(0, charPool.size) }.map(charPool::get).joinToString("")
+        val randomString = ("a").map { kotlin.random.Random.nextInt(0, charPool.size) }.map(charPool::get).joinToString("")
         if (getAccessToken) {
             presenter.getAlbumSpotifySearch(accessToken, randomString)
         }

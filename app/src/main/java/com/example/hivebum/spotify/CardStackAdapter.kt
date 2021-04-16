@@ -27,14 +27,6 @@ class CardStackAdapter(
         return albums.size
     }
 
-    fun setSpots(albums: List<AlbumData>) {
-        this.albums = albums
-    }
-
-    fun getSpots(): List<AlbumData> {
-        return albums
-    }
-
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         //var name: TextView = view.findViewById(R.id.genreNameText)
         var image: ImageView = view.findViewById(R.id.item_image)

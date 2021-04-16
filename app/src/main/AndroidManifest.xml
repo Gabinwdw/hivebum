@@ -9,7 +9,8 @@
         android:label="Hivebum"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar.Fullscreen">
+        android:theme="@style/Theme.AppCompat.NoActionBar.Fullscreen"
+        android:fullBackupContent="@xml/backup_descriptor">
         <activity android:name="com.example.hivebum.spotify.view.SpotifyView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

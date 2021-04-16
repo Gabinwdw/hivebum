@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class ApiResultArtistSpotify(var artistId: String?) {
     @SerializedName("external_urls")
-    var external_urls: ExternalUrls? = null
+    var externalUrls: ExternalUrls? = null
     @SerializedName("followers")
     var followers: Followers? = null
     @SerializedName("genres")
