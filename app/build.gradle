@@ -6,7 +6,6 @@ plugins {
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
 
     defaultConfig {
         applicationId "com.example.hivebum"
@@ -31,6 +30,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'com.example.hivebum'
 }
 
 dependencies {
@@ -60,4 +60,8 @@ dependencies {
 
     implementation "com.yuyakaido.android:card-stack-view:2.3.4"
     implementation 'com.github.fornewid:neumorphism:0.3.0'
+
+    // Mockito
+    testImplementation "org.mockito:mockito-core:3.3.3"
+    testImplementation 'org.mockito:mockito-inline:2.13.0'
 }

@@ -12,7 +12,7 @@ import com.yuyakaido.android.cardstackview.Direction
 class SpotifyPresenter(view: SpotifyView, context: Context) {
 
     private var view: SpotifyView? = view
-    private var model: SpotifyModel = SpotifyModel(context)
+    var model: SpotifyModel = SpotifyModel(context)
 
     fun onViewCreated() {
     }
