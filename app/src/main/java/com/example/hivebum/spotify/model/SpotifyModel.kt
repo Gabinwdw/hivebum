@@ -85,7 +85,7 @@ class SpotifyModel(private var context: Context) {
                     onFinishedListener.onFailure()
                 } else {
                     if(!addNewAlbum(responseRes, albumUrl))
-                        onFinishedListener.getNewAblums()
+                        onFinishedListener.getNewAlbums()
                     else
                         onFinishedListener.setGenreText(listAlbums[0].genre)
                 }

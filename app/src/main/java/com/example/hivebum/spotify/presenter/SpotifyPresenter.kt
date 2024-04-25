@@ -49,7 +49,7 @@ class SpotifyPresenter(view: SpotifyView, context: Context) {
         view?.displayAlbumPicture(album.albums?.items?.get(0)?.artists?.get(0)?.id!!, album.albums?.items?.get(0)?.images?.get(0)?.url!!)
     }
 
-    fun getNewAblums() {
+    fun getNewAlbums() {
         view?.getNewAlbum()
     }
 
